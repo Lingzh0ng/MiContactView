@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="ContactFlowLayout">
+    <attr name="gravity">
+      <enum name="left" value="-1"/>
+      <enum name="center" value="0"/>
+      <enum name="right" value="1"/>
+    </attr>
+    <attr format="integer" name="del_drawable"/>
+  </declare-styleable>
+
+  <declare-styleable name="AutoScrollView">
+    <attr format="dimension" name="max_height"/>
+  </declare-styleable>
+
+</resources>

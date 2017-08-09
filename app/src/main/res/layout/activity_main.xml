@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wearapay.micontactview.MainActivity"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#dddddd"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="联系人"
+        android:textColor="@android:color/holo_green_dark"
+        />
+
+    <com.wearapay.contact.AutoScrollView
+        android:id="@+id/autoScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_weight="1"
+        app:max_height="100dip"
+        >
+      <com.wearapay.contact.ContactFlowLayout
+          android:id="@+id/flowLayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="100dp"
+          />
+    </com.wearapay.contact.AutoScrollView>
+
+
+    <ImageView
+        android:id="@+id/ibAddReceiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/add_contact"
+        />
+  </LinearLayout>
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      />
+</RelativeLayout>

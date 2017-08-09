@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    >
+
+  <LinearLayout
+      android:id="@+id/llContact"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:background="@drawable/mi_contact_view_bg"
+      android:padding="5dp"
+      >
+    <TextView
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#000000"
+        />
+    <ImageView
+        android:id="@+id/ivDel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/mi_clear"
+        />
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/edInput"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_marginStart="10dp"
+      android:background="@android:color/transparent"
+      android:imeOptions="actionNext"
+      android:inputType="phone"
+      android:maxLength="20"
+      android:minWidth="20dp"
+      android:singleLine="true"
+      android:textColor="#000000"
+      android:textCursorDrawable="@null"
+      android:textSize="14sp"
+      android:visibility="gone"
+      />
+
+</merge>
